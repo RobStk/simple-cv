@@ -1,0 +1,13 @@
+@use '../configs/spaces';
+
+.contact-section {
+    padding-left: spaces.$padding-main/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3em;
+
+    h1 {
+        font-size: x-large;
+    }
+}

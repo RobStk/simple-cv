@@ -1,0 +1,18 @@
+@use '../configs/spaces';
+
+.name-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: spaces.$padding-main;
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: large;
+        font-weight: unset;
+    }
+}

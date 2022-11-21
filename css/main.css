@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+}
+html *,
+html *::before,
+html *::after {
+  box-sizing: inherit;
+}
+html * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr -webkit-max-content;
+  grid-template-rows: 1fr max-content;
+  background-color: hsl(207deg, 61%, 95%);
+  color: hsl(207deg, 61%, 20%);
+}
+
+.contact-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.contact-section {
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3em;
+}
+.contact-section h1 {
+  font-size: x-large;
+}
+
+.footer {
+  font-size: small;
+  text-align: center;
+}
+
+.name-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+}
+.name-section h1 {
+  text-transform: uppercase;
+}
+.name-section h2 {
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: unset;
+}
+
+.cv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cv__header {
+  display: grid;
+  grid-template-columns: 50% auto 1fr;
+  justify-content: stretch;
+  position: relative;
+}
+.cv__header .name-section {
+  background-color: hsl(207deg, 61%, 20%);
+  color: hsl(207deg, 61%, 95%);
+  height: 8rem;
+  border-bottom-right-radius: 3.5rem 1.5rem;
+}
+.cv__header .divider {
+  border-top: 6.97rem solid hsl(207deg, 61%, 20%);
+  border-right: 4.1rem solid transparent;
+  position: relative;
+  right: 0.16rem;
+}
+.cv__content {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+}
+.cv__content > :first-child {
+  background-color: hsl(207deg, 61%, 20%);
+  color: hsl(207deg, 61%, 95%);
+}

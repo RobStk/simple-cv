@@ -1,0 +1,9 @@
+@use '../configs/colors';
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr max-content;
+    background-color: colors.$bg-primary;
+    color: colors.$fg-primary
+}
