@@ -1,7 +1,7 @@
 @use '../configs/spaces';
 
 .contact-section {
-    padding-left: spaces.$padding-main/2;
+    padding-left: calc(spaces.$main/2);
     display: flex;
     flex-direction: column;
     justify-content: center;

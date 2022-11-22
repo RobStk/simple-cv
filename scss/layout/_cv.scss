@@ -26,10 +26,10 @@
     }
 
     &__content {
-        height: 100%;
         display: grid;
-        grid-template-columns: 50% 1fr;
-        > :first-child {
+        grid-template-columns: 1fr 1fr;
+        
+        >:first-child {
             background-color: colors.$bg-secondary;
             color: colors.$fg-secondary;
         }

@@ -1,0 +1,11 @@
+@use '../configs/spaces';
+
+.content-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: spaces.$main;
+    padding-bottom: spaces.$main;
+    padding-left: 0;
+    padding-right: spaces.$main;
+}
