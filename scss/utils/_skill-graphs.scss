@@ -1,0 +1,87 @@
+@use '../configs/colors';
+
+@mixin circle ($percent, $size: 5em, $fg-color: colors.$fg-primary, $bg-color: colors.$bg-primary) {
+    
+    .skill-circle-#{$percent} {
+        $rotate-base: 45;
+        $rotate-additional: 0;
+
+        @if $percent > 0 {
+            $rotate-additional: calc(360*$percent/100);
+        }
+
+        $rotate: -$rotate-base + $rotate-additional;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: $size;
+        height: $size;
+        padding: calc($size/10);
+        -webkit-box-shadow: 0px 0px 0px 1px $fg-color;
+        -moz-box-shadow: 0px 0px 0px 1px $fg-color;
+        box-shadow: 0px 0px 0px 1px $fg-color;
+        border-radius: 50%;
+        color: $fg-color;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: inherit;
+            width: inherit;
+            border-radius: inherit;
+            border: calc($size/10) solid transparent;
+
+            @if $percent > 0 {
+                border-top-color: $fg-color;
+            }
+
+            @if $percent > 25 {
+                border-right-color: $fg-color;
+            }
+
+            @if $percent > 50 {
+                border-bottom-color: $fg-color;
+            }
+
+            rotate: #{$rotate-base}deg;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: inherit;
+            width: inherit;
+            border-radius: inherit;
+            border: calc($size/10) solid $bg-color;
+            border-top-color: transparent;
+            rotate: #{$rotate}deg;
+
+            @if $percent > 25 {
+                border-left-color: transparent;
+            }
+
+            @if $percent > 50 {
+                border-bottom-color: transparent;
+            }
+
+            @if $percent > 75 {
+                border-right-color: transparent;
+                border-top-color: $fg-color;
+            }
+        }
+
+        > * {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            background-color: $bg-color;
+            height: 100%;
+            width: 100%;
+            border-radius: inherit;
+            border: 1px solid $fg-color;
+        }
+    }
+}

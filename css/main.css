@@ -67,7 +67,7 @@ body {
   font-weight: unset;
 }
 
-.skill-circle {
+.skill-circle-0 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,33 +77,968 @@ body {
   padding: 0.5em;
   box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
   border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
 }
-.skill-circle::before {
+.skill-circle-0::before {
   content: "";
   position: absolute;
   height: inherit;
   width: inherit;
   border-radius: inherit;
-  border: 2.5em solid;
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-  border-right-color: transparent;
+  border: 0.5em solid transparent;
   rotate: 45deg;
 }
-.skill-circle::after {
+.skill-circle-0::after {
   content: "";
   position: absolute;
   height: inherit;
   width: inherit;
   border-radius: inherit;
-  border: 2.5em solid;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: -45deg;
+}
+.skill-circle-0 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-5::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-5::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: -27deg;
+}
+.skill-circle-5 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-10 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-10::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-10::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: -9deg;
+}
+.skill-circle-10 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-15 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-15::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-15::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 9deg;
+}
+.skill-circle-15 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-20 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-20::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-20::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 27deg;
+}
+.skill-circle-20 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-25 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-25::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-25::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 45deg;
+}
+.skill-circle-25 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-30 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-30::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  border-right-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-30::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 63deg;
+  border-left-color: transparent;
+}
+.skill-circle-30 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-35 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-35::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  border-right-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-35::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 81deg;
+  border-left-color: transparent;
+}
+.skill-circle-35 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-40 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-40::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  border-right-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-40::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 99deg;
+  border-left-color: transparent;
+}
+.skill-circle-40 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-45 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-45::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  border-right-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-45::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 117deg;
+  border-left-color: transparent;
+}
+.skill-circle-45 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-50 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-50::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  border-right-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-50::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 135deg;
+  border-left-color: transparent;
+}
+.skill-circle-50 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-55 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-55::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  border-right-color: hsl(207deg, 61%, 20%);
+  border-bottom-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-55::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 153deg;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+.skill-circle-55 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-60 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-60::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  border-right-color: hsl(207deg, 61%, 20%);
+  border-bottom-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-60::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 171deg;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+.skill-circle-60 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-65 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-65::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  border-right-color: hsl(207deg, 61%, 20%);
+  border-bottom-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-65::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 189deg;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+.skill-circle-65 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-70 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-70::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  border-right-color: hsl(207deg, 61%, 20%);
+  border-bottom-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-70::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 207deg;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+.skill-circle-70 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-75 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-75::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  border-right-color: hsl(207deg, 61%, 20%);
+  border-bottom-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-75::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 225deg;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+.skill-circle-75 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-80 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-80::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  border-right-color: hsl(207deg, 61%, 20%);
+  border-bottom-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-80::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 243deg;
   border-left-color: transparent;
   border-bottom-color: transparent;
   border-right-color: transparent;
-  border-top-color: hsl(207deg, 61%, 95%);
-  rotate: 81deg;
+  border-top-color: hsl(207deg, 61%, 20%);
 }
-.skill-circle > * {
+.skill-circle-80 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-85 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-85::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  border-right-color: hsl(207deg, 61%, 20%);
+  border-bottom-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-85::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 261deg;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-85 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-90 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-90::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  border-right-color: hsl(207deg, 61%, 20%);
+  border-bottom-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-90::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 279deg;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-90 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-95 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-95::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  border-right-color: hsl(207deg, 61%, 20%);
+  border-bottom-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-95::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 297deg;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-95 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: hsl(207deg, 61%, 95%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  border: 1px solid hsl(207deg, 61%, 20%);
+}
+
+.skill-circle-100 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  box-shadow: 0px 0px 0px 1px hsl(207deg, 61%, 20%);
+  border-radius: 50%;
+  color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-100::before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+  border-right-color: hsl(207deg, 61%, 20%);
+  border-bottom-color: hsl(207deg, 61%, 20%);
+  rotate: 45deg;
+}
+.skill-circle-100::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 0.5em solid hsl(207deg, 61%, 95%);
+  border-top-color: transparent;
+  rotate: 315deg;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: hsl(207deg, 61%, 20%);
+}
+.skill-circle-100 > * {
   display: flex;
   align-items: center;
   justify-content: center;
