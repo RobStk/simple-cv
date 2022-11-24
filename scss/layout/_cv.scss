@@ -26,12 +26,21 @@
     }
 
     &__content {
+        height: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         
         >:first-child {
             background-color: colors.$bg-secondary;
             color: colors.$fg-secondary;
+            border-top-right-radius: 2rem;
+            // border-bottom-right-radius: 2rem;
+        }
+
+        >:last-child {
+            .content-container {
+                justify-content: space-around;
+            }
         }
     }
 }

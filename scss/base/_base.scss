@@ -1,5 +1,9 @@
+@use '../configs/fonts';
+
 html {
     box-sizing: border-box;
+    font-family: map-get(fonts.$families, main );
+    font-size: 14px;
 
     *,
     *::before,
