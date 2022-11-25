@@ -6,7 +6,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 0.2em;
     margin-bottom: 0.2em;
 
     > * {
@@ -14,14 +13,29 @@
     }
 
     p {
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.2em;
         text-align: justify;
+        line-height: 130%;
+
+        .smallCaps {
+            font-size: large;
+            text-decoration: underline;
+            line-height: 110%;
+        }
     }
 
     h2 {
-        font-size: larger;
-        text-align: justify;
+        font-size: large;
+        margin-bottom: 0.5em;
+        line-height: 110%;
+        letter-spacing: 1px;
+        .smallCaps {
+            font-weight: 400;
+        }
+    }
+
+    ul {
+        list-style: inside;
     }
 
     .header {
@@ -43,5 +57,15 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
+    }
+
+    .date {
+        font-size: small;
+        letter-spacing: 1px;
+    }
+
+    .content-section {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
     }
 }

@@ -1,0 +1,9 @@
+span {
+    &.caps {
+        text-transform: uppercase;
+    }
+
+    &.smallCaps {
+        font-variant: small-caps;
+    }
+}
