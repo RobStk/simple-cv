@@ -4,6 +4,8 @@ body {
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr max-content;
+    grid-template-columns: minmax(min-content, 62rem);;
+    justify-content: center;
     background-color: colors.$bg-primary;
-    color: colors.$fg-primary
+    color: colors.$fg-primary;
 }

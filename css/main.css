@@ -26,6 +26,9 @@ body {
   display: grid;
   grid-template-rows: 1fr -webkit-max-content;
   grid-template-rows: 1fr max-content;
+  grid-template-columns: minmax(-webkit-min-content, 62rem);
+  grid-template-columns: minmax(min-content, 62rem);
+  justify-content: center;
   background-color: white;
   color: hsl(207deg, 61%, 20%);
 }
@@ -65,6 +68,7 @@ span.smallCaps {
 }
 
 .footer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -85,7 +89,6 @@ span.smallCaps {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 2.6rem;
 }
 .name-section h1 {
   text-transform: uppercase;
@@ -1543,21 +1546,29 @@ span.smallCaps {
 }
 .cv__header {
   display: grid;
-  grid-template-columns: 50% auto 1fr;
-  justify-content: stretch;
-  position: relative;
+  grid-template-columns: 60% auto 1fr;
 }
-.cv__header .name-section {
-  background-color: hsl(207deg, 61%, 20%);
+.cv__header .name-wrapper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
   color: white;
   height: 8rem;
-  border-bottom-right-radius: 3.5rem 1.5rem;
 }
-.cv__header .divider {
-  border-top: 6.97rem solid hsl(207deg, 61%, 20%);
-  border-right: 4.1rem solid transparent;
+.cv__header .name-wrapper :first-child {
+  width: 100%;
+  border-bottom-right-radius: 4rem;
+  background-color: hsl(207deg, 61%, 20%);
+}
+.cv__header .name-wrapper::after {
+  content: "";
+  border-top: 6rem solid hsl(207deg, 61%, 20%);
+  border-right: 4rem solid transparent;
   position: relative;
-  right: 0.16rem;
+  right: 0.5rem;
+}
+.cv__header .name-wrapper > * {
+  padding-left: 2.6rem;
 }
 .cv__content {
   height: 100%;

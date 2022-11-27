@@ -1,4 +1,6 @@
 @use '../configs/colors';
+@use '../configs/spaces';
+@use '../utils/fancy-header-bg';
 
 .cv {
     display: flex;
@@ -6,23 +8,17 @@
     gap: 1rem;
 
     &__header {
+        $height: 8rem;
+
         display: grid;
-        grid-template-columns: 50% auto 1fr;
-        justify-content: stretch;
-        position: relative;
+        grid-template-columns: 60% auto 1fr;
 
-        .name-section {
-            background-color: colors.$bg-secondary;
-            color: colors.$fg-secondary;
-            height: 8rem;
-            border-bottom-right-radius: 3.5rem 1.5rem;
-        }
-
-        .divider {
-            border-top: 6.97rem solid colors.$bg-secondary;
-            border-right: 4.1rem solid transparent;
-            position: relative;
-            right: 0.16rem;
+        .name-wrapper {
+            @include fancy-header-bg.style($height, colors.$fg-secondary, colors.$bg-secondary);
+            height: $height;
+            > * {
+                padding-left: spaces.$main;
+            }
         }
     }
 
